@@ -1,0 +1,8 @@
+.desktop {
+    float: left;
+    width: 700px;
+}
+.mobile {
+    float: center;
+    width: 300px;
+}
