@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    font-family: "Archivo Narrow", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+}
+
+.header {
+
+    background-image: url(file:///Users/baugustine/Downloads/iffall2026/publish/multi-panel-page/images/brookings%20low%20opacity.webp);
+    background-size: cover;
+    background-position: center 30%;
+    width: 100%;
+    height: 448px;
+    padding: 1em 0;
+    
+}
+
+.header-text {
+    color: white;
+    
+}
+
+h1 {
+    font-size: 80px;
+    padding-top: 82.5px;
+
+}
+
+h2 {
+   font-size: 30px;
+   margin-top: -56.5px;
+   
+}
+
+
+h3 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 40px;
+    color: white;
+}
+
+.intro-lipsum {
+    padding: 0 18.25%;
+    text-align: left;
+    font-size: 18px;
+    margin-top: -7.5px;
+    line-height: 1.4;
+    margin-bottom: 23px;
+    color: white;
+}
+
+.ginko {
+    float: right;
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+section:first-of-type {
+    background-color: #9b5656;
+}
+
+section:nth-of-type(2) {
+    background-color: #b84400;
+    height: 45rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    list-style: none;
+    padding-left: 276px;
+    margin-top: -10px;
+    text-align: left;
+    padding-right: 275px;
+    
+}
+
+.grid img {
+    width: 50%;
+    float: left;
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 24px;
+    margin-right: 12px;
+}
+
+.photo-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.photo-text {
+    margin-right: 50px;
+    font-size: 18px;
+    line-height: 1.375;
+    color: white;
+}
+
+#section-title2 {
+    padding-top: 38px;
+    padding-bottom: 2px;
+   
+}
+
+section:nth-of-type(3) {
+    background-color: #dfb135;
+    height: 43rem;
+}
+
+.section-3 {
+    background-color: #9e7645;
+    height: 25.5rem;
+}
+
+.section-3 p {
+    margin-top: -9px;
+    font-size: 26px;
+    line-height: 1.39;
+    color: white;
+    width: 44rem;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.section-title3 {
+    margin-top: -1px;
+}
+
+.copyright {
+    text-align: left;
+    padding-left: 17.25rem;
+    padding-top: 1.3rem;
+    font-size: 18px;
+    color: white;
+    background-color: #ea8b10;
+    height: 5.2rem;
+}
+
