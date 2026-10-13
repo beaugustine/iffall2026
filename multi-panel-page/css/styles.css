@@ -8,7 +8,8 @@ body {
 
 .header {
 
-    background-image: url(file:///Users/baugustine/Downloads/iffall2026/publish/multi-panel-page/images/brookings5.png);
+    /* background-image: url(file:///Users/baugustine/Downloads/iffall2026/publish/multi-panel-page/images/brookings5.png); */
+    background-image: url(../images/brookings-low-opacity.png);
     background-size: cover;
     background-position: center 38%;
     width: 100%;
