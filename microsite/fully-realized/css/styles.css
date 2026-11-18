@@ -1,0 +1,507 @@
+html {
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: "ogg-text", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #DACBAC;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.hero {
+    background-color: #892E32;
+    box-shadow: 0 4px 125px 100px rgba(0, 0, 0, 0.25) inset;
+    padding: 80px 0;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    box-sizing: border-box;
+}
+    
+
+h1 {
+    font-family: "trajan-sans-pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: clamp(50px, 7vw, 100px);
+    color: #F6F0D9;
+    position: relative;
+    z-index: 3;
+    grid-area: 1/1;
+    
+}
+
+h2 {
+    font-family: "ma-shan-zheng", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(55, 126, 100, .65);
+    font-size: clamp(80px, 20vw, 300px);
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    transform: translateY(-20%);
+    white-space: nowrap;
+    width: max-content;
+    max-width: 100%;
+    grid-area: 1/1;
+
+}
+
+.header {
+    font-family: "trajan-sans-pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: end;
+    gap: 5%;
+    text-align: center;
+    margin: 20px 20px;
+    transition: all 0.3s ease;
+}
+
+.header div {
+    position: relative;
+    display: inline-block;
+	height: 90px;
+	box-sizing: border-box;
+	border-radius: 20px;
+	padding: 20px 50px;
+	background-color: #F6F0D9;
+    box-shadow: 8px 8px 0 #377E64;
+    
+}
+
+@media (max-width: 1160px) {
+    .header div {
+        padding: 15px 25px;
+        height: 65px;
+    }
+}
+
+@media (max-width: 675px) {
+    .header div {
+        display: none;
+    }
+}
+
+.header div:hover {
+   box-shadow: 8px 8px 0 #377E64, inset 0 0 10px 7px rgba(218, 203, 172, .75);
+}
+
+.header div:active {
+    transform: translateY(5px);
+    box-shadow: inset 0 0 10px 7px rgba(218, 203, 172, .75);
+}
+
+.header div a {
+    text-decoration: none;
+    color: #377E64;
+    position: relative;
+    font-size: 20px;
+    top: 60%;
+    white-space: nowrap;
+}
+
+@media (max-width: 1160px) {
+    .header div a {
+        font-size: 15px;
+    }
+}
+
+.header div a.header-characters {
+    font-family: "ma-shan-zheng", sans-serif;
+    color: black;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    margin-top: -40px;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+@media (max-width: 1160px) {
+    .header div a.header-characters {
+        font-size: 20px;
+        margin-top: -25px;
+    }
+}
+
+#top-logo {
+    max-width: 600px;
+    height: auto;
+    position: absolute;
+    margin: 1.5% 0 2% 0;
+}
+
+@media (max-width: 940px) {
+    #top-logo {
+        width: 50%;
+        margin-top: 3%;
+    }
+}
+
+@media (max-width: 675px) {
+    #top-logo {
+        position: relative;
+        margin: 3% 0 -8% 0;
+        width: 80%;
+    }
+}
+
+@media (max-width: 525px) {
+    #top-logo {
+        width: 70%;
+        margin: 4% 0 -14% 2%;
+    }
+}
+
+.button-container {
+    text-align: right;
+    margin: -12% 1% 3% 0;
+    padding: 2%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #F6F0D9;
+    box-shadow: 5px 5px 0 #377E64;
+    z-index: 8;
+    color: #377E64;
+    font-family: "trajan-sans-pro", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+
+}
+
+.dropdown:focus-within .dropdown-content {
+    display: block;
+}
+
+button {
+    all: unset;
+  cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    background-color: #F6F0D9;
+    box-shadow: 5px 5px 0 #377E64;
+    z-index: 8;
+    right: 0;
+    left: auto;
+}
+
+.dropdown-content a {
+    color: #377E64;
+    font-family: "trajan-sans-pro", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media (min-width: 675px) {
+    .button-container {
+        display: none;
+    }
+}
+
+.body {
+    max-width: 40%;
+    margin-left: 10%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.main-body {
+    display: flex;
+    align-items: flex-start;
+}
+
+.body-text {
+    max-width: 40%;
+    margin-left: 10%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.body-image {
+    margin: 60px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.body-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+#winds-image {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: 50% 40%;
+}
+
+.sets {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 10px 60px 60px 60px;
+
+}
+
+.sets img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+
+}
+
+.tiles {
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+.tiles img {
+    max-width: 80%;
+    height: auto;
+    width: 800px;
+    
+}
+
+.tiles h3 {
+    margin-left: 2%;
+    font-size: 30px;
+}
+
+.footer {
+    background-color: #377E64;
+    margin: 0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer p {
+    font-size: clamp(1px, 2vw, 15px);
+    color: #DACBAC;
+}
+
+.logo {
+    max-height: 30px;
+    width: auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    margin-top: -35px;
+}
+
+
+
+
+@media (max-width: 1024px) {
+
+    .header {
+        gap: 20px;
+        margin: 20px;
+    }
+
+    .header div a {
+        font-size: 16px;
+    }
+
+    .main-body {
+        gap: 30px;
+        align-items: flex-start;
+    }
+
+    .body,
+    .body-text {
+        max-width: 45%;
+        margin: 30px 0 30px 5%;
+    }
+
+    .body-image {
+        margin: 50px 5%;
+        align-items: flex-start;
+        
+    }
+
+    .sets {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 30px;
+        gap: 20px;
+    }
+
+    .tiles {
+        margin-left: 5%;
+        margin-right: 5%;
+        gap: 40px;
+    }
+
+    .tiles img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+
+    .logo {
+        margin-top: -30px;
+    }
+
+
+
+}
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 50px 15px;
+    }
+
+    .header div {
+        height: 55px;
+        padding: 12px 20px;
+    }
+
+    .header div a {
+        font-size: 14px;
+    }
+
+    .main-body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .body,
+    .body-text {
+        max-width: 85%;
+        width: 85%;
+        margin: 30px auto;
+    }
+
+    .body-image {
+        width: 85%;
+        margin: 20px auto 40px;
+        gap: 25px;
+    }
+
+    .tiles {
+        grid-template-columns: 1fr;
+        margin: 30px 7%;
+        gap: 20px;
+    }
+
+    .tiles h3 {
+        font-size: 24px;
+    }
+
+    .footer p {
+        font-size: 10px;
+    }
+
+    .logo {
+        max-height: 25px;
+        width: auto;
+        margin-top: -28px;
+    }
+
+}
+
+
+@media (max-width: 675px) {
+
+    .hero {
+        padding: 50px 10px;
+        min-height: 180px;
+    }
+
+    .body,
+    .body-text {
+        margin: 20px auto;
+    }
+    
+    .tiles h3 {
+        margin-bottom: 10px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .footer p {
+        margin: 0;
+    }
+
+    .logo {
+        margin-top: -60px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .hero {
+        padding: 5px 5px;
+    }
+
+    h2 {
+        margin-top: 90px;
+    }
+
+    .sets {
+        grid-template-columns: 1fr;
+    }
+
+    .tiles h3 {
+        font-size: 19px;
+    }
+
+}
