@@ -322,6 +322,7 @@ button {
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
+    box-shadow: 0 50vh 0 50vh #377E64;
 }
 
 .footer p {
